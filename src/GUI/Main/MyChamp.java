@@ -21,12 +21,17 @@ public class MyChamp extends Application
    @Override
    public void start(Stage stage) throws Exception
     {
-      Parent root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("/GUI/View/MainView.fxml"));
 
       Scene scene = new Scene(root);
-
       stage.setScene(scene);
       stage.show();
+      String title = "Esbjerg School Football Championship Management";
+      stage.setTitle(title);
+      stage.setResizable(false);
+      stage.setMaximized(false);
+//      stage.setMinWidth(1024);
+//      stage.setMinHeight(768);
     }
 
    /**
