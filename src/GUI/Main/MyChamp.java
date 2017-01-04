@@ -3,7 +3,7 @@
  * To change this header, choose Tools | Templates
  * and open the template in the editor.
  */
-package mychamp;
+package GUI.Main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -21,7 +21,7 @@ public class MyChamp extends Application
    @Override
    public void start(Stage stage) throws Exception
     {
-      Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
 
       Scene scene = new Scene(root);
 
